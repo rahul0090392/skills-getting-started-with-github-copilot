@@ -160,22 +160,43 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 0 0 0 18px;
+  list-style: none;
+  margin: 0;
   padding: 0;
+  display: block;
 }
 
 .participant-item {
-  display: list-item;
-  list-style-position: inside;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #ffffff;
-  padding: 6px 10px;
-  margin-bottom: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
   border-radius: 6px;
   border: 1px solid #f0f0f5;
   color: #333;
   box-shadow: 0 1px 0 rgba(10, 10, 25, 0.02);
   font-size: 14px;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #a0a0a8;
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-participant:hover {
+  color: #c62828;
+  background: rgba(198,40,40,0.06);
 }
 
 .no-participants {
